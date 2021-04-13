@@ -81,7 +81,7 @@ const rootReducer = (state = initState, action) => {
         size: state.size + 1 
       }
 
-      // comment here for add features
+      //  first push after github clone
     default: return state;
    }
 }
