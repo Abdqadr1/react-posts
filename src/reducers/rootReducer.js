@@ -48,6 +48,8 @@ const rootReducer = (state = initState, action) => {
         posts: [action.post, ...state.posts],
         size: state.size + 1 
       }
+
+      // comment here for add features
     default: return state;
    }
 }
