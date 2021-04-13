@@ -43,6 +43,8 @@ const rootReducer = (state = initState, action) => {
       case "ADD_POST": 
       return {
         ...state,
+
+        // do some stuffs here in the master branch
         posts: [action.post, ...state.posts],
         size: state.size + 1 
       }
