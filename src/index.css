@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todos .post img{
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  opacity: 0.6;
+  width: 100px;
+  height: 100px;
+}
+
+.todos .post{
+  overflow:  hidden;
+
+  padding-left: 80px;
+}
+
+@media  screen and (max-width: 700px) {
+ 
+}
+
