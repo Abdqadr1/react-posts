@@ -1,7 +1,7 @@
 import React from 'react'
 import Rainbow from '../hoc/rainbow';
 
-const Contact = (props) => {
+const Contact = () => {
     
     return (
         <div className="container">

@@ -1,16 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 
-const Navbar = (props) => {
-    // setTimeout(() => {
-    //     props.history.push('./about')
-    // }, 2000)
+const Navbar = () => {
     return (
         <nav className="nav red darken-3">
             <div className="container">
-                <a className="brand-logo">PosTGraD</a>
+                <Link to="/" className="brand-logo">PosTGraD</Link>
                 <ul className="right">
                     <li><Link to="/">Home</Link></li>
                     <li><NavLink to="/about">About</NavLink></li>

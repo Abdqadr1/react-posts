@@ -10,6 +10,7 @@ function RainbowColour(Content){
     let className = randomColor + '-text';
 
     return  (props) => {
+        console.log(props)
         return (
             <div className={className}>
                 <Content  {...props}/>
