@@ -1,18 +1,22 @@
 
 import {Link} from 'react-router-dom'
 import ball from '../ball.jpg'
+import { PostContext } from '../context/postContext'
+import {useContext} from 'react'
 
 const Todos = ({todos, deleteTodo}) => {
 
-    const todoList = todos.length ? (todos.map(todo => {
+    const {posts} = useContext(PostContext)
+
+    const todoList = posts.length ? (posts.map(post => {
         return (
-            <div className="post card" key={todo.id}>
+            <div className="post card" key={post.id}>
                 <img src={ball} alt="a ball" />
                 <div className="card-content">
-                <Link to={'./' + todo.id}>
-                    <span className="card-title">{todo.title}</span>
+                <Link to={'./' + post.id}>
+                    <span className="card-title">{post.title}</span>
                 </Link>
-                    <p>{todo.body}</p>
+                    <p>{post.body}</p>
                 </div>
             </div>
         )

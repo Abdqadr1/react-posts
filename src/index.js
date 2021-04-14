@@ -6,14 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import rootReducer from './reducers/rootReducer'
+import PostContextProvider from './context/postContext';
 
-const store = createStore(rootReducer);
+//for create redux store
+// const store = createStore(rootReducer);
 
 ReactDOM.render(
-  <Provider store={store}>
+  <PostContextProvider>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </PostContextProvider>
+  // {/* <Provider store={store}>
+  //   for redux  store
+  // </Provider>, */}
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 // import axios from 'axios'
 import Todos from './Todos';
 import AddTodo from './AddTodo'
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import { addPost }  from '../actions/postActions'
 
 class Home extends Component{
@@ -62,4 +62,4 @@ const mapDispatchToState = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToState)(Home);
+export default (Home);
