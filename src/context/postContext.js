@@ -30,6 +30,7 @@ const PostContextProvider = (props) => {
     },
   ]);
 
+  // initial number of posts
   const [size, setSize] = useState(4);
 
   const addPost = (post) => {
