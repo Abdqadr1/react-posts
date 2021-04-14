@@ -69,10 +69,9 @@ import { PostContext } from '../context/postContext';
 
 
 const Todo = (props) => {
-    console.log(props)
     const {posts, deletePost} = useContext(PostContext)
     let id = props.match.params.post_id;
-    const post = posts.find(p => p.id === id)
+    const post = posts.find(p => p.id === Number(id))
     const _post = post ? (
                     <div className="post">
                         <h4 className="center">{post.title}</h4>
