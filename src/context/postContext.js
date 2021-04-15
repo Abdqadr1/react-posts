@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"
+import { createContext, useState, useEffect } from "react"
 
 export const PostContext = createContext();
 
@@ -32,10 +32,17 @@ const PostContextProvider = (props) => {
 
   // initial number of posts
   const [size, setSize] = useState(4);
+  
+  //use effect
+  useEffect(()=>{
+    console.log(posts);
+  }, [posts])
 
   const addPost = (post) => {
             setPosts([post, ...posts]);
          }
+
+  
 
 const deletePost =  (id) => {
     let newPosts = posts.filter(post => post.id !== id);
